@@ -53,7 +53,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-const SHEET_SIDES = ["top sheet", "right sheet", "bottom sheet", "left sheet"] as const
+const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
+
+type SheetSide = (typeof SHEET_SIDES)[number]
  
 export default function Home() {
   return (
@@ -98,7 +100,7 @@ export default function Home() {
           <HoverCard>
             <HoverCardTrigger>Hover Card</HoverCardTrigger>
             <HoverCardContent   >
-              The React Framework – created and maintained by @vercel.
+              The React Framework - created and maintained by @vercel.
             </HoverCardContent>
           </HoverCard>
           <Select>
@@ -143,7 +145,7 @@ export default function Home() {
                   <SheetHeader>
                     <SheetTitle>Edit profile</SheetTitle>
                     <SheetDescription>
-                      Make changes to your profile here. Click save when you're done.
+                      Make changes to your profile here. Click save when you are done.
                     </SheetDescription>
                   </SheetHeader>
                   <div className="grid gap-4 py-4">
