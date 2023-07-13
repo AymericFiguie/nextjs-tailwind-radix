@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button/button";
 import { Badge } from "@/components/ui/badge"
 import {
   AlertDialog,
@@ -12,7 +12,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from "@/components/ui/alert-dialog/alert-dialog"
 import {
   Dialog,
   DialogContent,
