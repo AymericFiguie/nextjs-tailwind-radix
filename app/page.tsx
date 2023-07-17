@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button/button";
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -12,7 +12,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog/alert-dialog"
+} from "@/components/ui/alert-dialog";
 import {
   Dialog,
   DialogContent,
@@ -20,28 +20,28 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card"
+} from "@/components/ui/hover-card";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Skeleton } from "@/components/ui/skeleton"
-import { Input } from "@/components/ui/input"
+} from "@/components/ui/popover";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Input } from "@/components/ui/input";
 import {
   Sheet,
   SheetClose,
@@ -51,12 +51,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
-const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
+const SHEET_SIDES = ["top", "right", "bottom", "left"] as const;
 
-type SheetSide = (typeof SHEET_SIDES)[number]
- 
+type SheetSide = (typeof SHEET_SIDES)[number];
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-24">
@@ -65,7 +65,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-10">
         <div className="flex w-full justify-evenly items-center">
-          <Button onClick={() => alert('ya')}>Button</Button>
+          <Button onClick={() => alert("ya")}>Button</Button>
           <Badge variant="outline">Badge</Badge>
         </div>
         <div className="flex w-full justify-evenly">
@@ -99,7 +99,7 @@ export default function Home() {
         <div className="flex w-full justify-evenly">
           <HoverCard>
             <HoverCardTrigger>Hover Card</HoverCardTrigger>
-            <HoverCardContent   >
+            <HoverCardContent>
               The React Framework - created and maintained by @vercel.
             </HoverCardContent>
           </HoverCard>
@@ -145,7 +145,8 @@ export default function Home() {
                   <SheetHeader>
                     <SheetTitle>Edit profile</SheetTitle>
                     <SheetDescription>
-                      Make changes to your profile here. Click save when you are done.
+                      Make changes to your profile here. Click save when you are
+                      done.
                     </SheetDescription>
                   </SheetHeader>
                   <div className="grid gap-4 py-4">
@@ -153,13 +154,21 @@ export default function Home() {
                       <Label htmlFor="name" className="text-right">
                         Name
                       </Label>
-                      <Input id="name" value="Pedro Duarte" className="col-span-3" />
+                      <Input
+                        id="name"
+                        value="Pedro Duarte"
+                        className="col-span-3"
+                      />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
                       <Label htmlFor="username" className="text-right">
                         Username
                       </Label>
-                      <Input id="username" value="@peduarte" className="col-span-3" />
+                      <Input
+                        id="username"
+                        value="@peduarte"
+                        className="col-span-3"
+                      />
                     </div>
                   </div>
                   <SheetFooter>
@@ -174,5 +183,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  )
+  );
 }
