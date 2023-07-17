@@ -53,8 +53,8 @@ export const Default: Story = {
           <AlertDialogTitle>Mise en ligne de la story 🚀</AlertDialogTitle>
           <AlertDialogDescription className="flex flex-col gap-4">
             <span>
-              Cette story s'apprête a être mise en ligne. Elle sera disponible
-              publiquement à l'adresse suivante :
+              Cette story s&apos;apprête a être mise en ligne. Elle sera
+              disponible publiquement à l&apos;adresse suivante :
             </span>
             <a
               href="https://story.tl/test"
@@ -84,7 +84,7 @@ export const Destructive: Story = {
         <AlertDialogHeader>
           <AlertDialogTitle>Êtes-vous certain ?</AlertDialogTitle>
           <AlertDialogDescription>
-            Il est impossible d'annuler la suppression d'une story.
+            Il est impossible d&apos;annuler la suppression d&apos;une story.
             Souhaitez-vous continuer ?
           </AlertDialogDescription>
         </AlertDialogHeader>
@@ -109,8 +109,8 @@ export const Informative: Story = {
         <AlertDialogHeader>
           <AlertDialogTitle>Passage en mode brouillon 📝</AlertDialogTitle>
           <AlertDialogDescription>
-            La story est passé en mode brouillon. Elle n'est plus disponible
-            publiquement.
+            La story est passé en mode brouillon. Elle n&apos;est plus
+            disponible publiquement.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
