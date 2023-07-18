@@ -56,7 +56,7 @@ export const Default: Story = {
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="username" className="text-right text-xs">
-              Nom d'utilisateur
+              Nom d&apos;utilisateur
             </Label>
             <Input id="username" value="@peduarte" className="col-span-3" />
           </div>
