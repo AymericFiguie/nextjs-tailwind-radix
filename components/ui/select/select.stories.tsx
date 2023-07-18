@@ -12,6 +12,7 @@ import {
 
 const argTypes: ArgTypes<SelectContentProps> = {
   position: {
+    description: "Ajust the position of the selectbox relative to the trigger",
     options: ["popper", "fixed"],
     control: { type: "radio" },
   },
