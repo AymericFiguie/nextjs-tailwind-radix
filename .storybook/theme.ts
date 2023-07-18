@@ -10,6 +10,5 @@ export default create({
     "https://www.fastory.io/hubfs/Showcase/showcase-v2/logo-fastory.png",
   brandTarget: "_self",
   fontCode: "monospace",
-  colorPrimary: "red",
-  colorSecondary: "blue",
+  colorPrimary: "#2B80F7",
 });
