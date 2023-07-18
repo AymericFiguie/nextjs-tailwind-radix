@@ -33,6 +33,7 @@ export const Default: DefaultStory = {
   args: {
     placeholderText: "Alexandre",
     type: "text",
+    disabled: false,
   },
   argTypes: {
     placeholderText: {
@@ -44,9 +45,13 @@ export const Default: DefaultStory = {
       control: { type: "select" },
       options: ["text", "email", "password"],
     },
+    disabled: {
+      description: "Disabled",
+      control: { type: "boolean" },
+    },
   },
-  render: ({ placeholder, type }) => (
-    <Input type={type} placeholder={placeholder} />
+  render: ({ placeholderText, type, disabled }) => (
+    <Input type={type} placeholder={placeholderText} disabled={disabled} />
   ),
 };
 
@@ -59,6 +64,7 @@ export const WithLabel: StoryWithLabel = {
     labelText: "Prénom",
     placeholderText: "Alexandre",
     type: "text",
+    disabled: false,
   },
   argTypes: {
     labelText: {
@@ -74,11 +80,15 @@ export const WithLabel: StoryWithLabel = {
       control: { type: "select" },
       options: ["text", "email", "password"],
     },
+    disabled: {
+      description: "Disabled",
+      control: { type: "boolean" },
+    },
   },
-  render: ({ labelText, placeholder }) => (
+  render: ({ labelText, placeholderText, disabled }) => (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="input">{labelText}</Label>
-      <Input id="input" placeholder={placeholder} />
+      <Input id="input" placeholder={placeholderText} disabled={disabled} />
     </div>
   ),
 };
@@ -90,8 +100,9 @@ type StoryWithButton = StoryObj<WithButtonProps>;
 export const WithButton: StoryWithButton = {
   args: {
     buttonText: "S'abonner",
-    placeholderText: "Alexandre",
-    type: "text",
+    placeholderText: "Email",
+    type: "email",
+    disabled: false,
   },
   argTypes: {
     buttonText: {
@@ -107,10 +118,14 @@ export const WithButton: StoryWithButton = {
       control: { type: "select" },
       options: ["text", "email", "password"],
     },
+    disabled: {
+      description: "Disabled",
+      control: { type: "boolean" },
+    },
   },
-  render: ({ buttonText, placeholder, type }) => (
+  render: ({ buttonText, placeholderText, type, disabled }) => (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type={type} placeholder={placeholder} />
+      <Input type={type} placeholder={placeholderText} disabled={disabled} />
       <Button type="submit">{buttonText}</Button>
     </div>
   ),
